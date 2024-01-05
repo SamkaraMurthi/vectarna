@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@font-face {
+    font-family: myStandarText;
+    src: url("fonts/lastica.ttf");
+  }
+
+  :root {
+    --primaryTextColor: #232e35;
+    --secondaryTextColor: #656d72;
+    --borderColor: #f1f1f1;
+    --lineColor: #d9d9d9;
+    --primaryBackgroundColor: #fff;
+    --secondaryBackgroundColor: #fbfbfb;
+    --thirdBackgroundColor: #f5f3fe;
+    --primaryIconColor: #7e74f1;
+    --primaryIconColorHover: #5d51e8;
+    --sectionPadding: 6rem 0;
+    --itemBorderRadius: 0.7rem;
+  }
+
+  #purplelogo {
+    position: relative;
+    width: 300px; /* Adjust the width and height as needed */
+    height: 200px;
+  }
+  
+  #purplelogo {
+    width: 100%;
+      height: 100%;
+      opacity: 0; /* Initially set the image to be invisible */
+      animation: fadeInOut 5s infinite;/* Define the transition effect */
+  }
+  
+  @keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0; /* Image is invisible at the start and end of the animation */
+    }
+    50% {
+        opacity: 1; /* Image is visible in the middle of the animation */
+    }
+  }
+
+  body{
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+  }
+
+  /* Footer Section */
+footer {
+    padding: 4rem 0;
+    background: rgb(0, 0, 0);
+    text-align: center;
+  }
+  
+  .footer-icons {
+    margin-bottom: 1rem;
+  }
+  
+  .footer-icons a {
+    margin: 0 0.5rem;
+  }
+  
+  .footer-icons svg {
+    fill: #ffffff;
+  }
+  
+  .footer-icons a:hover svg {
+    fill: #ffffff;
+  }
+
+  h1{
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
+  }
+
+  #title{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  /* judul 1 */
+#judul{
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+  }
+  
+  #judul-biru{
+    padding-left: 10px;
+  }
+  
+  #judul h1 {
+    color: rgb(255, 255, 255); /* Default color for all h1 elements inside #books */
+  }
+  
+  #judul-biru h1#judulwarna {
+    color: var(--primaryIconColor); /* Color for the "Collections" heading inside #blue-books */
+  }
+  
+  #judul h1,
+  #judul-biru h1#judulwarna {
+    margin: 0; /* Remove default margin */
+  }
+  /* judul 1 akhir */
+
+   /* judul 2 */
+#judul2{
+    display: flex;
+    justify-content: center;
+    padding-top: 0;
+  }
+  
+  #judul-biru2{
+    padding-left: 10px;
+  }
+  
+  #judul2 h1 {
+    color: rgb(255, 255, 255); /* Default color for all h1 elements inside #books */
+  }
+  
+  #judul-biru2 h1#judulwarna2 {
+    color: var(--primaryIconColor); /* Color for the "Collections" heading inside #blue-books */
+  }
+  
+  #judul2 h1,
+  #judul-biru2 h1#judulwarna2 {
+    margin: 0; /* Remove default margin */
+  }
+  /* judul 2 akhir */
+
+
+  .containerlogo{
+    display: grid;
+    justify-content: center;
+  }
+  
+  .top, .below{
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .tulisan{
+   display: flex;
+    justify-content: center;
+    padding-top: -40px;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  .text{
+    justify-content: center;
+    text-align: center;
+    font-size: 1.7em;
+    color: white;
+  }
